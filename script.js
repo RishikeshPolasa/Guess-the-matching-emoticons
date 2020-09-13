@@ -60,8 +60,10 @@ reset = () => {
 checkWin = () => {
   if (6 === flip_length) {
     // console.log("all flips are checked");
-    message = "<h2>You have Won!</h2>";
+    setTimeout(()=>{
+     message = "<h2>You have Won!</h2>";
     $("#container").prepend("div").html(message);
+    },1000);
   }
 };
 
